@@ -46,6 +46,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A60CAD828A7CC7D00106AE2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		4A82C52628A7843D00159231 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +90,7 @@
 		4A83688828A12C94008B0434 /* Space */ = {
 			isa = PBXGroup;
 			children = (
+				4A60CAD828A7CC7D00106AE2 /* images */,
 				4A8C889B28A7C6300046CA8C /* component */,
 				4A8C889328A7B4540046CA8C /* WebService */,
 				4A8C889228A7B44E0046CA8C /* Protocols */,

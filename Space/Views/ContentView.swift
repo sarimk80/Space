@@ -28,15 +28,10 @@ struct ContentView: View {
                 
                 ScrollView {
                     VStack {
-                        Picker("", selection: $tabs) {
-                            Text("Planets").tag(Tabs.planets)
-                            Text("Moons").tag(Tabs.moons)
-                        }
-                        .padding()
-                        .pickerStyle(.segmented)
                         
                         
-                        Spacer()
+                        
+                        //Spacer()
                         
                         switch planetViewModel.planetViewState{
                         case .initial:
@@ -53,8 +48,18 @@ struct ContentView: View {
                 }
                 
             }
-            .navigationTitle("Planets")
+            .navigationTitle("Celestial objects")
             .toolbarBackground(Color("BackgroundColor"), in: .navigationBar)
+            .toolbar {
+                ToolbarItem(placement:.principal) {
+                    Picker("", selection: $tabs) {
+                        Text("Planets").tag(Tabs.planets)
+                        Text("Moons").tag(Tabs.moons)
+                    }
+                    .padding()
+                    .pickerStyle(.segmented)
+                }
+            }
         }
         
         

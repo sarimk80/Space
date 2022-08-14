@@ -14,11 +14,15 @@ struct PlanetCard: View {
     let discoverBy:String
     let isPlanet:Bool
     let aroundPlanet:String
+    
+    @Namespace var nspace
+    
     var body: some View {
         HStack {
             
-            Image(isPlanet ? planetImage : "moon")
+            Image(isPlanet ? planetImage : gerRandomMoonImage())
                 .resizable()
+                .matchedGeometryEffect(id: "image", in: nspace)
                 .frame(width: 100,height: 100)
             VStack(alignment: .leading,spacing: 8) {
                 
@@ -50,12 +54,13 @@ struct PlanetCard: View {
         .cornerRadius(25)
         .shadow(color: Color.black.opacity(0.3), radius: 5,x: 5,y: 5)
         .padding()
+        .buttonStyle(.plain)
     }
 }
 
 struct PlanetsCard_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetCard(planetImage: "pluto", planetName: "Earth", moonsCount: 1, discoverBy: "No bosy", isPlanet: true, aroundPlanet: ""
+        PlanetCard(planetImage: "pluto", planetName: "Earth", moonsCount: 1, discoverBy: "No bosy", isPlanet: false, aroundPlanet: ""
             
         )
     }

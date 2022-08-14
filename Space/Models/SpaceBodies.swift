@@ -13,8 +13,7 @@ struct SpaceBodies : Codable{
     
 }
 
-struct Bodies : Identifiable, Codable{
-    
+struct Bodies :Hashable, Identifiable, Codable{
     let id:String//": "lune",
     let name:String//": "La Lune",
     let englishName:String//": "Moon",
@@ -63,22 +62,22 @@ struct Bodies : Identifiable, Codable{
     
 }
 
-struct Moons : Codable{
+struct Moons :Hashable, Codable{
     let moon:String?//": "La Lune",
     let rel:String?//": "https://api.le-systeme-solaire.net/rest/bodies/lune"
 }
 
-struct Mass : Codable{
+struct Mass :Hashable, Codable{
     let massValue:Double?//": 7.346,
     let massExponent:Int?//": 22
 }
 
-struct Vol : Codable {
+struct Vol :Hashable, Codable {
     let volValue:Double?//": 2.1968,
     let volExponent:Int?//": 10
 }
 
-struct AroundPlanet : Codable{
+struct AroundPlanet : Hashable,Codable{
     let planet:String?//": "terre",
     let rel:String?//": "https://api.le-systeme-solaire.net/rest/bodies/terre"
 }

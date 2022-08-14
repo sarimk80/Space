@@ -7,20 +7,41 @@
 
 import SwiftUI
 
+enum Route : Hashable{
+    
+    
+    case detail(bodies:Bodies)
+}
+
 struct PlanetListView: View {
     
     var planetsAndMoon:[Bodies]
     
     var body: some View {
-        ForEach(planetsAndMoon) { value in
-            PlanetCard(planetImage: value.id,
-                       planetName: value.name,
-                       moonsCount: value.moons?.count ?? 0,
-                       discoverBy: value.discoveredBy.isEmpty ? "Not Known" : value.discoveredBy,
-                       isPlanet: value.isPlanet,
-                       aroundPlanet: value.aroundPlanet?.planet ?? ""
-            )
+        LazyVStack {
+            ForEach(planetsAndMoon) { value in
+                
+                NavigationLink(value: Route.detail(bodies: value)) {
+                    PlanetCard(planetImage: value.id,
+                               planetName: value.name,
+                               moonsCount: value.moons?.count ?? 0,
+                               discoverBy: value.discoveredBy.isEmpty ? "Not Known" : value.discoveredBy,
+                               isPlanet: value.isPlanet,
+                               aroundPlanet: value.aroundPlanet?.planet ?? ""
+                    )
+
+                }
+                .buttonStyle(.plain)
+            }
         }
+        .navigationDestination(for: Route.self) { route in
+            switch route {
+            case .detail(let bodies):
+                DetailView(detailObject: bodies)
+                
+            }
+        }
+        
     }
 }
 

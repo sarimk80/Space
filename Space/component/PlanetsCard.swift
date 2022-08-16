@@ -17,10 +17,14 @@ struct PlanetCard: View {
     
     @Namespace var nspace
     
+    @Binding var moonImage:String
+    var moonRandomImage:String = gerRandomMoonImage()
+    
+
     var body: some View {
         HStack {
             
-            Image(isPlanet ? planetImage : gerRandomMoonImage())
+            Image(isPlanet ? planetImage : moonRandomImage)
                 .resizable()
                 .matchedGeometryEffect(id: "image", in: nspace)
                 .frame(width: 100,height: 100)
@@ -60,7 +64,8 @@ struct PlanetCard: View {
 
 struct PlanetsCard_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetCard(planetImage: "pluto", planetName: "Earth", moonsCount: 1, discoverBy: "No bosy", isPlanet: false, aroundPlanet: ""
+        PlanetCard(planetImage: "pluto", planetName: "Earth", moonsCount: 1, discoverBy: "No bosy", isPlanet: false, aroundPlanet: "",
+                   moonImage: .constant("moon_1")
             
         )
     }

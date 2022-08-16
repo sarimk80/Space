@@ -16,7 +16,8 @@ enum Route : Hashable{
 struct PlanetListView: View {
     
     var planetsAndMoon:[Bodies]
-    
+    @State private var moonImage:String = ""
+        
     var body: some View {
         LazyVStack {
             ForEach(planetsAndMoon) { value in
@@ -27,7 +28,9 @@ struct PlanetListView: View {
                                moonsCount: value.moons?.count ?? 0,
                                discoverBy: value.discoveredBy.isEmpty ? "Not Known" : value.discoveredBy,
                                isPlanet: value.isPlanet,
-                               aroundPlanet: value.aroundPlanet?.planet ?? ""
+                               aroundPlanet: value.aroundPlanet?.planet ?? "",
+                               moonImage: $moonImage
+                               
                     )
 
                 }

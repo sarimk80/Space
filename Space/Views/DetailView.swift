@@ -37,11 +37,13 @@ struct DetailView: View {
                             Text(detailObject.bodyType ?? "")
                             Text("Volume \(String(format: "%.3f", detailObject.vol?.volValue ?? 0.0))")
                         }
+                        .frame(maxWidth: .infinity,alignment: .leading)
+                        .padding()
                         
                     }
                     
                 }
-                .padding()
+                
                 
             }
         }
@@ -51,8 +53,7 @@ struct DetailView: View {
     
     
     func bodyMass() -> some View {
-        return
-        Text("Hello")
+        return Text("Hello")
         
     }
 }

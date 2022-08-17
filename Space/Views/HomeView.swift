@@ -14,8 +14,15 @@ struct HomeView: View {
                 .ignoresSafeArea()
             
             TabView {
-                ContentView()
+                
+                SpaceNewsView()
                     .tag(0)
+                    .tabItem {
+                        Label("Space news", systemImage: "newspaper.fill")
+                    }
+                
+                ContentView()
+                    .tag(1)
                     .tabItem {
                         Label("Space Bodies", systemImage:"globe.americas")
                     }

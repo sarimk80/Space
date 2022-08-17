@@ -20,6 +20,9 @@
 		4A8C889A28A7B5A50046CA8C /* PlanetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C889928A7B5A50046CA8C /* PlanetsViewModel.swift */; };
 		4A8C889D28A7C6410046CA8C /* PlanetsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C889C28A7C6410046CA8C /* PlanetsCard.swift */; };
 		4A8C889F28A7C6D40046CA8C /* PlanetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C889E28A7C6D40046CA8C /* PlanetListView.swift */; };
+		4AA468DA28AD0F3F0077B62A /* SpaceNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA468D928AD0F3F0077B62A /* SpaceNews.swift */; };
+		4AA468DC28AD118F0077B62A /* SpaceNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA468DB28AD118F0077B62A /* SpaceNewsView.swift */; };
+		4AA468DE28AD11AF0077B62A /* SpaceNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA468DD28AD11AF0077B62A /* SpaceNewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		4A8C889928A7B5A50046CA8C /* PlanetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewModel.swift; sourceTree = "<group>"; };
 		4A8C889C28A7C6410046CA8C /* PlanetsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsCard.swift; sourceTree = "<group>"; };
 		4A8C889E28A7C6D40046CA8C /* PlanetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListView.swift; sourceTree = "<group>"; };
+		4AA468D928AD0F3F0077B62A /* SpaceNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNews.swift; sourceTree = "<group>"; };
+		4AA468DB28AD118F0077B62A /* SpaceNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsView.swift; sourceTree = "<group>"; };
+		4AA468DD28AD11AF0077B62A /* SpaceNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				4A82C52828A7845D00159231 /* SpaceBodies.swift */,
+				4AA468D928AD0F3F0077B62A /* SpaceNews.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -72,6 +79,7 @@
 				4A82C52A28A792AD00159231 /* HomeView.swift */,
 				4A8C889E28A7C6D40046CA8C /* PlanetListView.swift */,
 				4A78935A28A8D902009AB9BE /* DetailView.swift */,
+				4AA468DB28AD118F0077B62A /* SpaceNewsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				4A8C889928A7B5A50046CA8C /* PlanetsViewModel.swift */,
+				4AA468DD28AD11AF0077B62A /* SpaceNewsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -222,7 +231,10 @@
 			files = (
 				4A78935D28A8DB38009AB9BE /* Helper.swift in Sources */,
 				4A83688C28A12C94008B0434 /* ContentView.swift in Sources */,
+				4AA468DE28AD11AF0077B62A /* SpaceNewsViewModel.swift in Sources */,
+				4AA468DC28AD118F0077B62A /* SpaceNewsView.swift in Sources */,
 				4A8C889A28A7B5A50046CA8C /* PlanetsViewModel.swift in Sources */,
+				4AA468DA28AD0F3F0077B62A /* SpaceNews.swift in Sources */,
 				4A82C52B28A792AD00159231 /* HomeView.swift in Sources */,
 				4A78935B28A8D902009AB9BE /* DetailView.swift in Sources */,
 				4A83688A28A12C94008B0434 /* SpaceApp.swift in Sources */,

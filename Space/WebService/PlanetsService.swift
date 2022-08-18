@@ -7,10 +7,26 @@
 
 //https://api.spaceflightnewsapi.net/v3/articles
 
+//http://api.open-notify.org/astros.json
+
 import Foundation
 import Combine
 
 class PlanetsService: PlanetProtocol {
+    
+    func getAllAstros() -> AnyPublisher<Astros, Error> {
+        let url = URL(string: "http://api.open-notify.org/astros.json")
+        
+        return URLSession.shared.dataTaskPublisher(for: url!)
+            .map{value in
+                print(value)
+                return value.data
+            }
+            .decode(type: Astros.self, decoder: JSONDecoder())
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+    }
+    
     func getSpaceNews() -> AnyPublisher<[SpaceNews], Error> {
         let url = URL(string: "https://api.spaceflightnewsapi.net/v3/articles")
         

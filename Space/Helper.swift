@@ -12,3 +12,15 @@ func gerRandomMoonImage() -> String {
     let image = "moon_\(random)"
     return image
 }
+
+
+func convertStringToDate(_dateTime:String) -> Date {
+    
+    let dateFormate = DateFormatter()
+    
+    dateFormate.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    
+    let articleDate = dateFormate.date(from: _dateTime)
+    
+    return articleDate ?? Date.distantFuture
+}

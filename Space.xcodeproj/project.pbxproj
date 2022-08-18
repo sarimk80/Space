@@ -23,6 +23,7 @@
 		4AA468DA28AD0F3F0077B62A /* SpaceNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA468D928AD0F3F0077B62A /* SpaceNews.swift */; };
 		4AA468DC28AD118F0077B62A /* SpaceNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA468DB28AD118F0077B62A /* SpaceNewsView.swift */; };
 		4AA468DE28AD11AF0077B62A /* SpaceNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA468DD28AD11AF0077B62A /* SpaceNewsViewModel.swift */; };
+		4AE1FB7028AE64C600FCFC01 /* AstrosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1FB6F28AE64C500FCFC01 /* AstrosModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		4AA468D928AD0F3F0077B62A /* SpaceNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNews.swift; sourceTree = "<group>"; };
 		4AA468DB28AD118F0077B62A /* SpaceNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsView.swift; sourceTree = "<group>"; };
 		4AA468DD28AD11AF0077B62A /* SpaceNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsViewModel.swift; sourceTree = "<group>"; };
+		4AE1FB6F28AE64C500FCFC01 /* AstrosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrosModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				4A82C52828A7845D00159231 /* SpaceBodies.swift */,
 				4AA468D928AD0F3F0077B62A /* SpaceNews.swift */,
+				4AE1FB6F28AE64C500FCFC01 /* AstrosModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE1FB7028AE64C600FCFC01 /* AstrosModel.swift in Sources */,
 				4A78935D28A8DB38009AB9BE /* Helper.swift in Sources */,
 				4A83688C28A12C94008B0434 /* ContentView.swift in Sources */,
 				4AA468DE28AD11AF0077B62A /* SpaceNewsViewModel.swift in Sources */,

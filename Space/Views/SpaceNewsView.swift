@@ -62,6 +62,8 @@ struct NewsCard: View {
 
     var spaceNews:SpaceNews
     
+    
+    
     var body: some View {
         VStack(alignment: .leading,spacing:8) {
             AsyncImage(url: URL(string: spaceNews.imageUrl)) {image in
@@ -80,7 +82,7 @@ struct NewsCard: View {
                 .font(.headline)
             Text(spaceNews.summary)
                 .font(.subheadline)
-            Text(spaceNews.publishedAt)
+            Text(convertStringToDate(_dateTime: spaceNews.publishedAt),format:.dateTime)
             
             Divider()
         }

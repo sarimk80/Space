@@ -12,4 +12,6 @@ protocol PlanetProtocol {
     func getAllPlanets() -> AnyPublisher<SpaceBodies,Error>
     
     func getSpaceNews() -> AnyPublisher<[SpaceNews],Error>
+    
+    func getAllAstros() -> AnyPublisher<Astros,Error>
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A18310228B0C0BE000C2F36 /* AstroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A18310128B0C0BE000C2F36 /* AstroView.swift */; };
+		4A18310428B0C0DB000C2F36 /* AstroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A18310328B0C0DB000C2F36 /* AstroViewModel.swift */; };
 		4A78935B28A8D902009AB9BE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78935A28A8D902009AB9BE /* DetailView.swift */; };
 		4A78935D28A8DB38009AB9BE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78935C28A8DB38009AB9BE /* Helper.swift */; };
 		4A82C52928A7845D00159231 /* SpaceBodies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A82C52828A7845D00159231 /* SpaceBodies.swift */; };
@@ -27,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A18310128B0C0BE000C2F36 /* AstroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroView.swift; sourceTree = "<group>"; };
+		4A18310328B0C0DB000C2F36 /* AstroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroViewModel.swift; sourceTree = "<group>"; };
+		4A18310528B0C380000C2F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4A78935A28A8D902009AB9BE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4A78935C28A8DB38009AB9BE /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		4A82C52828A7845D00159231 /* SpaceBodies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceBodies.swift; sourceTree = "<group>"; };
@@ -83,6 +88,7 @@
 				4A8C889E28A7C6D40046CA8C /* PlanetListView.swift */,
 				4A78935A28A8D902009AB9BE /* DetailView.swift */,
 				4AA468DB28AD118F0077B62A /* SpaceNewsView.swift */,
+				4A18310128B0C0BE000C2F36 /* AstroView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,6 +112,7 @@
 		4A83688828A12C94008B0434 /* Space */ = {
 			isa = PBXGroup;
 			children = (
+				4A18310528B0C380000C2F36 /* Info.plist */,
 				4A60CAD828A7CC7D00106AE2 /* images */,
 				4A8C889B28A7C6300046CA8C /* component */,
 				4A8C889328A7B4540046CA8C /* WebService */,
@@ -134,6 +141,7 @@
 			children = (
 				4A8C889928A7B5A50046CA8C /* PlanetsViewModel.swift */,
 				4AA468DD28AD11AF0077B62A /* SpaceNewsViewModel.swift */,
+				4A18310328B0C0DB000C2F36 /* AstroViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -233,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AE1FB7028AE64C600FCFC01 /* AstrosModel.swift in Sources */,
+				4A18310428B0C0DB000C2F36 /* AstroViewModel.swift in Sources */,
 				4A78935D28A8DB38009AB9BE /* Helper.swift in Sources */,
 				4A83688C28A12C94008B0434 /* ContentView.swift in Sources */,
 				4AA468DE28AD11AF0077B62A /* SpaceNewsViewModel.swift in Sources */,
@@ -246,6 +255,7 @@
 				4A8C889D28A7C6410046CA8C /* PlanetsCard.swift in Sources */,
 				4A82C52928A7845D00159231 /* SpaceBodies.swift in Sources */,
 				4A8C889528A7B4660046CA8C /* PlanetsProtocols.swift in Sources */,
+				4A18310228B0C0BE000C2F36 /* AstroView.swift in Sources */,
 				4A8C889F28A7C6D40046CA8C /* PlanetListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +388,7 @@
 				DEVELOPMENT_TEAM = N65MK7D7BV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Space/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -407,6 +418,7 @@
 				DEVELOPMENT_TEAM = N65MK7D7BV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Space/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

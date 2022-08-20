@@ -13,7 +13,9 @@ struct Astros:Codable {
 }
 
 struct People:Codable,Identifiable {
-    var id:UUID=UUID()
+    
+    var id :Int { UUID().hashValue }
+    
     let name:String//": "Oleg Artemyev",
     let craft:String//": "ISS"
 }

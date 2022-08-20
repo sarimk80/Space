@@ -26,7 +26,7 @@ struct HomeView: View {
                     .tabItem {
                         Label("Space Bodies", systemImage:"globe.americas")
                     }
-                Text("Hello")
+                AstroView()
                     .tag(2)
                     .tabItem {
                         Label("Astronats", systemImage: "person.3")

@@ -30,7 +30,7 @@ struct SpaceNewsView: View {
             }
             .navigationTitle("Space News")
             
-           
+            
         }
         
     }
@@ -59,7 +59,7 @@ struct NewsList: View {
 
 struct NewsCard: View {
     
-
+    
     var spaceNews:SpaceNews
     
     
@@ -70,23 +70,28 @@ struct NewsCard: View {
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    
+                
             } placeholder: {
                 ProgressView()
             }
             .cornerRadius(15)
             .frame(maxWidth: .infinity,maxHeight: 200)
             
+            Link(destination: URL(string: spaceNews.url)!) {
+                VStack(alignment: .leading) {
+                    Text(spaceNews.title)
+                        .font(.headline)
+                    Text(spaceNews.summary)
+                        .font(.subheadline)
+                }
+            }
+            .buttonStyle(.plain)
             
-            Text(spaceNews.title)
-                .font(.headline)
-            Text(spaceNews.summary)
-                .font(.subheadline)
             Text(convertStringToDate(_dateTime: spaceNews.publishedAt),format:.dateTime)
             
             Divider()
         }
-        .background(Color("cardColor"))
+        //.background(Color("CardColor"))
         .padding()
     }
 }
